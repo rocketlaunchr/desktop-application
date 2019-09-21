@@ -12,7 +12,7 @@ The application is a Desktop port of: [markdown-editor](https://github.com/rexxa
   </a>
 </p>
 
-### Tutorial
+## Tutorial
 
 -   https://electron.guide
 
