@@ -1,0 +1,43 @@
+{
+	"name": "visual-markdown",
+	"version": "1.0.0",
+	"description": "An example Desktop Application built using Go, Electron and React.js",
+	"main": "main.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "electron ."
+	},
+	"repository": "https://github.com/rocketlaunchr/desktop-application",
+	"bugs": {
+		"url": "https://github.com/rocketlaunchr/desktop-application/issues"
+	},
+	"homepage": "https://github.com/rocketlaunchr/desktop-application#readme",
+	"keywords": [
+		"Electron",
+		"electron.js",
+		"golang",
+		"go",
+		"react",
+		"react.js"
+	],
+	"author": "rocketlaunchr.cloud",
+	"license": "MIT",
+	"dependencies": {
+		"create-react-class": "^15.6.3",
+		"electron-alert": "^0.1.2",
+		"react": "^16.9.0",
+		"react-dom": "^16.9.0",
+		"react-markdown": "^4.2.2"
+	},
+	"devDependencies": {
+		"builtin-modules": "^3.1.0",
+		"electron": "^6.0.10",
+		"rollup-plugin-commonjs": "^10.1.0",
+		"rollup-plugin-json": "^4.0.0",
+		"rollup-plugin-node-builtins": "^2.1.2",
+		"rollup-plugin-node-globals": "^1.4.0",
+		"rollup-plugin-node-resolve": "^5.2.0",
+		"rollup-plugin-replace": "^2.2.0",
+		"rollup-plugin-terser": "^5.1.2"
+	}
+}

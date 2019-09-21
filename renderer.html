@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <style>
+            * {
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+            html,
+            body {
+                height: 100%;
+                width: 100%;
+                padding: 0;
+                margin: 0;
+            }
+
+            .editor {
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100%;
+                padding: 1em;
+                font-family: "Roboto Mono", monospace;
+                border: 0;
+                border-right: 1px solid rgb(169, 169, 169);
+                resize: none;
+            }
+
+            .preview {
+                margin-left: 50%;
+                min-height: 100%;
+                padding: 0 1em;
+                font: Helvetica, Arial, nimbussansl, liberationsans, freesans,
+                    clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+                    "Segoe UI Symbol";
+                color: #333;
+            }
+
+            .editor,
+            .preview {
+                width: 50%;
+            }
+
+            .preview code[class^="language-"] {
+                display: block;
+                background: #f8f8f8;
+                padding: 0.5em;
+                overflow-x: auto;
+            }
+
+            .preview blockquote {
+                margin: 0;
+                padding-left: 1.5em;
+                border-left: 0.5em #ccc solid;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="app"></div>
+    </body>
+
+    <script type="text/javascript" src="./renderer.js"></script>
+</html>
