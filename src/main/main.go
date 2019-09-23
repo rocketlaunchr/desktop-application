@@ -59,14 +59,14 @@ var win *js.Object
 func openWindow() {
 
 	if win == nil {
-		opts := map[string]interface{}{
+		opts := js.M{
 			"width":       800,
 			"height":      600,
 			"title":       "Visual Markdown",
 			"show":        false,
 			"skipTaskbar": true,
 			"minimizable": false,
-			"webPreferences": map[string]interface{}{
+			"webPreferences": js.M{
 				"nodeIntegration": true,
 				"devTools":        false,
 			},

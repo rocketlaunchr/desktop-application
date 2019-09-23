@@ -50,7 +50,7 @@ func init() {
 
 		return elements.Div(&elements.DivProps{Class: "app"},
 			elements.TextArea(&elements.TextAreaProps{Class: "editor", DefaultValue: appState.Markdown, OnChange: this.Get("change")}),
-			react.JSX(Markdown, map[string]interface{}{"className": "preview", "source": appState.Markdown, "escapeHtml": false}),
+			react.JSX(Markdown, js.M{"className": "preview", "source": appState.Markdown, "escapeHtml": false}),
 		)
 	})
 
