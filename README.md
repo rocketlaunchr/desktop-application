@@ -1,17 +1,34 @@
----
-title: Setup
-date: 2019-09-01
-draft: false
-exclude_search: false
----
+# Sample Desktop Application (Visual Markdown)
 
-ElectronAlert is a beautiful and developer-friendly alert for [Electron](https://electronjs.org/) applications. It is powered by [SweetAlert2](https://sweetalert2.github.io) and works directly from the main process.
+This repository contains the full source code for the [tutorial](https://electron.guide) on how to create a cross-platform Desktop Application using Electron and React.js written 100% in Go.
 
-#Tutorial: How to create a Cross-platform Desktop App using Electron, Go and React
-![Electron + Go + React](https://octodex.github.com/images/yaktocat.png)
+The application is a Desktop port of: [markdown-editor](https://github.com/rexxars/markdown-editor). Special thanks to [@rexxars](https://github.com/rexxars).
 
-Alright. Before we start off, some prerequisites:
-1. This tutorial targeted at Go Developers who either have little to no prior or professional knowledge of [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), [Rollup](https://rollupjs.org/) or [NPM](https://docs.npmjs.com/) (Node Package Manager).
-2. It also assumes you have a professional knowledge of GoLang.
-3. Some chill and enthusiasm. :)
+⭐ **The project to show your appreciation.**
 
+<p align="center">
+  <a href="https://electron.guide">
+    <img src="/assets/preview.gif" alt="screenshot">
+  </a>
+</p>
+
+## Tutorial
+
+-   https://electron.guide
+
+
+## Dependencies
+
+-   [Go](https://golang.org)
+-   [Gopher.js](https://github.com/gopherjs/gopherjs)
+-   [Electron.js](https://electronjs.org)
+-   [Go React Bindings](https://github.com/rocketlaunchr/react)
+
+## Features
+
+-   Cross-Platform (win, mac, linux)
+-   Tray icon
+-   Edit markdown and see **PREVIEW LIVE**
+
+
+**© 2019 PJ Engineering and Business Solutions Pty. Ltd.**
