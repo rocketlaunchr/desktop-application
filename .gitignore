@@ -1,5 +1,16 @@
+<<<<<<< HEAD
 node_modules/
 .jshintrc
 .idea
 /public
 .vscode
+=======
+<<<<<<< HEAD
+node_modules/
+.jshintrc
+=======
+.idea
+/public
+.vscode
+>>>>>>> 078c756126c19071386a427355cf1f7492095e10
+>>>>>>> 16b379f019e974d10201cb7f48455a05a1cf7fe2
