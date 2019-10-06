@@ -1,1 +1,8 @@
+<<<<<<< HEAD
 node_modules/
+.jshintrc
+=======
+.idea
+/public
+.vscode
+>>>>>>> 078c756126c19071386a427355cf1f7492095e10

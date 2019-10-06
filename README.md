@@ -1,34 +1,13 @@
-# Sample Desktop Application (Visual Markdown)
 
-This repository contains the full source code for the [tutorial](https://electron.guide) on how to create a cross-platform Desktop Application using Electron and React.js written 100% in Go.
+# ELECTRON.GUIDE
 
-The application is a Desktop port of: [markdown-editor](https://github.com/rexxars/markdown-editor). Special thanks to [@rexxars](https://github.com/rexxars).
+This repo contains the files for the site: https://electron.guide.
 
-⭐ **The project to show your appreciation.**
+## Contribution Guide
 
-<p align="center">
-  <a href="https://electron.guide">
-    <img src="/assets/preview.gif" alt="screenshot">
-  </a>
-</p>
+Currently looking for higher-quality images (including Linux screenshots)
 
-## Tutorial
-
--   https://electron.guide
+All are welcome to add content to the site. Issue a PR and from time-to-time I will review and approve.
 
 
-## Dependencies
-
--   [Go](https://golang.org)
--   [Gopher.js](https://github.com/gopherjs/gopherjs)
--   [Electron.js](https://electronjs.org)
--   [Go React Bindings](https://github.com/rocketlaunchr/react)
-
-## Features
-
--   Cross-Platform (win, mac, linux)
--   Tray icon
--   Edit markdown and see **PREVIEW LIVE**
-
-
-**© 2019 PJ Engineering and Business Solutions Pty. Ltd.**
+© 2019 rocketlaunchr.cloud. All rights reserved.
