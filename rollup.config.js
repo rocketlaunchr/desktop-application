@@ -3,9 +3,7 @@ import fs from "fs"; // Node.js file system module
 
 import resolve from "rollup-plugin-node-resolve";
 import commonjs from "rollup-plugin-commonjs";
-import {
-  terser
-} from "rollup-plugin-terser";
+import { terser } from "rollup-plugin-terser";
 import builtins from "builtin-modules";
 import globals from "rollup-plugin-node-globals";
 import builtins2 from "rollup-plugin-node-builtins";
@@ -15,8 +13,8 @@ import replace from "rollup-plugin-replace";
 let minify = false;
 let productionEnv = false;
 
-run("./src/renderer", "./renderer", minify);
-run("./src/main", "./main", minify);
+run("./src/main/main.go", "./main_go.js", minify);
+run("./src/renderer/main.go", "./renderer_go.js", minify);
 
 export default [
   // main process (nodejs) config
@@ -30,17 +28,17 @@ export default [
     external: ["electron", ...builtins],
     plugins: [
       resolve(),
-      commonjs({}),
+      commonjs(),
       globals(),
       builtins2(),
-      minify ?
-      terser({
-        ecma: 6
-      }) :
-      {
-        name: "x",
-        generateBundle: function () {}
-      },
+      minify
+        ? terser({
+            ecma: 6
+          })
+        : {
+            name: "x",
+            generateBundle: function() {}
+          },
       deleteFile("./main_go.js"),
       deleteFile("./main_go.js.map")
     ]
@@ -67,17 +65,17 @@ export default [
         )
       }),
       json(),
-      commonjs({}),
+      commonjs(),
       globals(),
       builtins2(),
-      minify ?
-      terser({
-        ecma: 6
-      }) :
-      {
-        name: "x",
-        generateBundle: function () {}
-      },
+      minify
+        ? terser({
+            ecma: 6
+          })
+        : {
+            name: "x",
+            generateBundle: function() {}
+          },
       deleteFile("./renderer_go.js"),
       deleteFile("./renderer_go.js.map")
     ]
@@ -85,24 +83,22 @@ export default [
 ];
 
 function run(input, output, minify) {
-  let path = "gopherjs build " + input;
-  if (minify) {
-    path = path + " -m ";
-  }
+  let command = `gopherjs build ${input}`;
 
-  output = output + "_go";
+  if (minify) command += " -m";
 
-  path = path + " -o " + output + ".js";
+  command += ` -o ${output}`;
 
-  childx.execSync(path);
+  if (process.platform.match(/win/)) childx.execSync('setx GOOS "linux"');
+
+  childx.execSync(command);
 }
 
 function deleteFile(filePath) {
   return {
     name: "deleteFile",
-    writeBundle: function () {
+    writeBundle: function() {
       fs.unlinkSync(filePath);
     }
   };
 }
-

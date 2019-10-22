@@ -14,21 +14,19 @@ The application is a Desktop port of: [markdown-editor](https://github.com/rexxa
 
 ## Tutorial
 
--   https://electron.guide
-
+- https://electron.guide
 
 ## Dependencies
 
--   [Go](https://golang.org)
--   [Gopher.js](https://github.com/gopherjs/gopherjs)
--   [Electron.js](https://electronjs.org)
--   [Go React Bindings](https://github.com/rocketlaunchr/react)
+- [Go](https://golang.org)
+- [Gopher.js](https://github.com/gopherjs/gopherjs)
+- [Electron.js](https://electronjs.org)
+- [Go React Bindings](https://github.com/rocketlaunchr/react)
 
 ## Features
 
--   Cross-Platform (win, mac, linux)
--   Tray icon
--   Edit markdown and see **PREVIEW LIVE**
-
+- Cross-Platform (win, mac, linux)
+- Tray icon
+- Edit markdown and see **PREVIEW LIVE**
 
 **© 2019 PJ Engineering and Business Solutions Pty. Ltd.**
