@@ -13,8 +13,12 @@ import replace from "rollup-plugin-replace";
 let minify = false;
 let productionEnv = false;
 
-run("./src/main/main.go", "./main_go.js", minify);
-run("./src/renderer/main.go", "./renderer_go.js", minify);
+gopherBuild("./src/main/main.go", "./main_go.js", minify);
+gopherBuild(
+  ["./src/renderer/main.go", "./src/renderer/app_def.go"],
+  "./renderer_go.js",
+  minify
+);
 
 export default [
   // main process (nodejs) config
@@ -82,7 +86,9 @@ export default [
   }
 ];
 
-function run(input, output, minify) {
+function gopherBuild(input, output, minify) {
+  if (input.join) input = input.join(" ");
+
   let command = `gopherjs build ${input}`;
 
   if (minify) command += " -m";
