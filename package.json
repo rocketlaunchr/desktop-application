@@ -32,7 +32,7 @@
 	},
 	"devDependencies": {
 		"builtin-modules": "^3.1.0",
-		"electron": "^6.0.10",
+		"electron": "^7.2.4",
 		"rollup-plugin-commonjs": "^10.1.0",
 		"rollup-plugin-json": "^4.0.0",
 		"rollup-plugin-node-builtins": "^2.1.2",
